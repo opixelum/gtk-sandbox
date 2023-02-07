@@ -11,7 +11,7 @@ OBJECTS := $(MAIN_O)
 
 $(EXECUTABLE): $(OBJECTS)
 	@mkdir -p bin
-	$(CC) $(OBJECTS) -o $@
+	$(CC) $(OBJECTS) $(LIBRARIES) -o $@
 
 $(MAIN_O): $(MAIN_C)
 	@mkdir -p build
