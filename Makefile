@@ -2,7 +2,7 @@ CC := gcc
 CFLAGS := -Wall -g -c -I include $(shell pkg-config --cflags gtk4)
 LIBRARIES := $(shell pkg-config --libs gtk4)
 
-EXECUTABLE := bin/gtk-hello-world
+EXECUTABLE := bin/gtk-hello-world.out
 
 MAIN_O := build/main.o
 MAIN_C := src/main.c
