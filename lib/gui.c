@@ -1,9 +1,9 @@
-#include <gtk/gtk.h>
+#include "gui.h"
 
-static void onActivate(GtkApplication *app)
+void onActivate(GtkApplication *application)
 {
     // Create a new window
-    GtkWidget *window = gtk_application_window_new(app);
+    GtkWidget *window = gtk_application_window_new(application);
 
     // Create a new button
     GtkWidget *button = gtk_button_new_with_label("Hello, World!");

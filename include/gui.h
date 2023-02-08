@@ -1,3 +1,6 @@
+#ifndef GUI_H
+#define GUI_H
+
 #include <gtk/gtk.h>
 
 /**
@@ -5,4 +8,6 @@
  * @param app Pointer to GtkApplication variable, defined with
  * gtk_application_new()
  */
-static void onActivate(GtkApplication *app);
+void onActivate(GtkApplication *application);
+
+#endif
